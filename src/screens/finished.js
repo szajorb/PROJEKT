@@ -8,17 +8,15 @@ function FinishedScreen() {
       filterListItems={li => Boolean(li.finishDate)}
       noListItems={
         <p>
-          Hey there! This is where books will go when you've finished reading
-          them. Get started by heading over to{' '}
-          <Link to="/discover">the Discover page</Link> to add books to your
-          list.
+          Tutaj znajdą się przeczytane przez ciebie książki. Zajrzyj na stronę {' '}
+          <Link to="/discover">Odkrywaj</Link> aby dodać książki do listy
         </p>
       }
       noFilteredListItems={
         <p>
-          Looks like you've got some reading to do! Check them out in your{' '}
-          <Link to="/list">reading list</Link> or{' '}
-          <Link to="/discover">discover more</Link>.
+          Wygląda na to że masz trochę książek do przeczytania, sprawdź książki {' '}
+          <Link to="/list">Do Przeczytania</Link> lub{' '}
+          <Link to="/discover">Odkrywaj Książki</Link>.
         </p>
       }
     />

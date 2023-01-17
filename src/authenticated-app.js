@@ -43,7 +43,7 @@ function AuthenticatedApp() {
       >
         {user.username}
         <Button variant="secondary" css={{marginLeft: '10px'}} onClick={logout}>
-          Logout
+          Wyloguj
         </Button>
       </div>
       <div
@@ -135,10 +135,10 @@ function Nav(params) {
           <NavLink to="/list">Do przeczytania</NavLink>
         </li>
         <li>
-          <NavLink to="/finished">Finished Books</NavLink>
+          <NavLink to="/finished">Przeczytane</NavLink>
         </li>
         <li>
-          <NavLink to="/discover">Discover</NavLink>
+          <NavLink to="/discover">Odkrywaj</NavLink>
         </li>
       </ul>
     </nav>

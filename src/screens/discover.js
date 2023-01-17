@@ -31,7 +31,7 @@ function DiscoverBooksScreen() {
       <div>
         <form onSubmit={handleSearchClick}>
           <Input
-            placeholder="Search books..."
+            placeholder="Wyszukaj książke"
             id="search"
             type="search"
             css={{width: '100%'}}
@@ -69,17 +69,17 @@ function DiscoverBooksScreen() {
       <div>
         {queried ? null : (
           <div css={{marginTop: 20, fontSize: '1.2em', textAlign: 'center'}}>
-            <p>Welcome to the discover page.</p>
-            <p>Here, let me load a few books for you...</p>
+            <p>Odkrywaj Książki</p>
+            <p>Możesz wyszukać książki korzystając z paska na górze ekranu</p>
             {isLoading ? (
               <div css={{width: '100%', margin: 'auto'}}>
                 <Spinner />
               </div>
             ) : isSuccess && books.length ? (
-              <p>Here you go! Find more books with the search bar above.</p>
+              <p>Sprawdź propozycje</p>
             ) : isSuccess && !books.length ? (
               <p>
-                Hmmm... I couldn't find any books to suggest for you. Sorry.
+                Nie udało się znaleźć książki spełniającej kryteria
               </p>
             ) : null}
           </div>

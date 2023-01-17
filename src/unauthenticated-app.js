@@ -37,11 +37,11 @@ function LoginForm({onSubmit, submitButton}) {
       }}
     >
       <FormGroup>
-        <label htmlFor="username">Username</label>
+        <label htmlFor="username">Login</label>
         <Input id="username" />
       </FormGroup>
       <FormGroup>
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Hasło</label>
         <Input id="password" type="password" />
       </FormGroup>
       <div>
@@ -83,23 +83,23 @@ function UnauthenticatedApp() {
       >
         <Modal>
           <ModalOpenButton>
-            <Button variant="primary">Login</Button>
+            <Button variant="primary">Zaloguj</Button>
           </ModalOpenButton>
-          <ModalContents aria-label="Login form" title="Login">
+          <ModalContents aria-label="Login form" title="Logowanie">
             <LoginForm
               onSubmit={login}
-              submitButton={<Button variant="primary">Login</Button>}
+              submitButton={<Button variant="primary">Zaloguj</Button>}
             />
           </ModalContents>
         </Modal>
         <Modal>
           <ModalOpenButton>
-            <Button variant="secondary">Register</Button>
+            <Button variant="secondary">Utwórz Konto</Button>
           </ModalOpenButton>
-          <ModalContents aria-label="Registration form" title="Register">
+          <ModalContents aria-label="Registration form" title="Rejestracja">
             <LoginForm
               onSubmit={register}
-              submitButton={<Button variant="secondary">Register</Button>}
+              submitButton={<Button variant="secondary">Utwóz Konto</Button>}
             />
           </ModalContents>
         </Modal>

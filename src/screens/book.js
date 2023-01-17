@@ -127,7 +127,7 @@ function NotesTextarea({listItem}) {
             fontWeight: 'bold',
           }}
         >
-          Notes
+          Notatki
         </label>
         {isError ? (
           <ErrorMessage
