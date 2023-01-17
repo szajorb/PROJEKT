@@ -132,7 +132,7 @@ function Nav(params) {
         }}
       >
         <li>
-          <NavLink to="/list">Reading List</NavLink>
+          <NavLink to="/list">Do przeczytania</NavLink>
         </li>
         <li>
           <NavLink to="/finished">Finished Books</NavLink>
