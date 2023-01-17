@@ -73,7 +73,8 @@ function UnauthenticatedApp() {
       }}
     >
       <Logo width="80" height="80" />
-      <h1>Bookshelf</h1>
+      <h1>Repozytorium Książek</h1>
+      <h6>Bartosz Szajor, Dominik Pochroń</h6>
       <div
         css={{
           display: 'grid',
